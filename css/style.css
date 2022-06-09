@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html,
+body {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#gradient {
+  font-weight: bold;
+  /* fundo gradiente */
+  background-image: linear-gradient(to right, #8f55fb, #a906d6);
+  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* a cor do texto deve estar como transparent */
+  color: transparent;
+}
+
+main {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.322),
+      rgb(0, 0, 0)
+    ),
+    url(../image/bg02.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 100vh;
+}
+
+/* HEADER */
+
+header {
+  background-color: transparent;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 80px;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 24px;
+  transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+
+  /* fundo gradiente */
+  background-image: linear-gradient(to right, #8f55fb, #a906d6);
+  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* a cor do texto deve estar como transparent */
+  color: transparent;
+}
+
+header .container img {
+  width: 160px;
+}
+
+#img03 {
+  width: 50%;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section .container-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 80px auto 0px auto;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: bold;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 380px;
+  padding-left: 15px;
+  font-size: 18px;
+  height: 45px;
+  margin-bottom: 13px;
+  border-radius: 20px;
+  border: 2px solid #0080ed;
+}
+form [type='submit'] {
+  background-color: #0080ed;
+  color: white;
+}
+form [type='submit']:hover {
+  cursor: pointer;
+}
+
+main .container-main img {
+  width: 600px;
+}
+
+/* CARDS */
+
+.cards {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.text--medium {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(187, 185, 185);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px -4px #000000;
+  transition: all 0.3s ease 0s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+}
+
+.image {
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image img {
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 20px;
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.desafio {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+  border: 1px solid black;
+  margin: 100px auto;
+  max-width: 980px;
+}
+
+.circle1,
+.circle2 {
+  background: rgba(255, 255, 255, 0.167);
+  background: linear-gradient(
+    to right bottom,
+    rgba(27, 12, 80, 0.486),
+    rgba(193, 84, 220, 0.203)
+  );
+  height: 40rem;
+  width: 40rem;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+.circle1 {
+  bottom: -200%;
+  right: -5%;
+  
+}
+.circle2 {
+  bottom: -100%;
+  left: -5%;
+}
